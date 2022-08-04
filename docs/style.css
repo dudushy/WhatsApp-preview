@@ -11,6 +11,11 @@
   --dark: #222428;
   --medium: #92949c;
   --light: #f4f5f8;
+
+  --input-back: #404040;
+  --input-text: #00e64d;
+  --output-back: #e6e6e6;
+  --output-text: #8f33ff;
 }
 
 body {
@@ -26,4 +31,30 @@ a {
 
 span#heart {
   color: var(--danger);
+}
+
+div#content {
+  display: inline-block;
+}
+
+p#output {
+  text-align: left;
+  font-size: x-large;
+
+  color: var(--output-text);
+  background-color: var(--output-back);
+
+  width: 20em;
+  height: 5em;
+}
+
+textarea#input {
+  resize: none;
+  font-size: x-large;
+
+  color: var(--input-text);
+  background-color: var(--input-back);
+
+  width: 20em;
+  height: 5em;
 }
