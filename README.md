@@ -1,2 +1,2 @@
-# [template-web](https://github.com/dudushy/template-web/)
-Template for Web projects.
+# [WhatsApp-preview](https://github.com/dudushy/WhatsApp-preview/)
+Type a text and preview the WhatsApp message.
