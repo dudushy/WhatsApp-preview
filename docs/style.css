@@ -58,9 +58,9 @@ textarea#input {
   resize: none;
 }
 
-table {
-  /* border: 1px solid var(--warning) */
-}
+/* table {
+  border: 1px solid var(--warning)
+} */
 
 table#reference {
   width: auto;
