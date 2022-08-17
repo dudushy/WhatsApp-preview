@@ -16,8 +16,66 @@
   <hr>
 
   <div id="content">
-    <p id="output"></p>
-    <textarea id="input" oninput="copyText()"></textarea>
+    <table id="reference">
+      <tr class="reference-tr">
+        <td>
+          <span class="text">_italic_</span>
+        </td>
+        <td>
+          <span class="textResult"><em>italic</em></span>
+        </td>
+      </tr>
+      <tr class="reference-tr">
+        <td>
+          <span class="text">*bold*</span>
+        </td>
+        <td>
+          <span class="textResult"><strong>bold</strong></span>
+        </td>
+      </tr>
+      <tr class="reference-tr">
+        <td>
+          <span class="text">~strikethrough~</span>
+        </td>
+        <td>
+          <span class="textResult"><s>strikethrough</s></span>
+        </td>
+      </tr>
+      <tr class="reference-tr">
+        <td>
+          <span class="text">```monospace```</span>
+        </td>
+        <td>
+          <span class="textResult"><code>monospace</code></span>
+        </td>
+      </tr>
+    </table>
+
+    <table id="preview">
+      <tr>
+        <td>
+          <p id="output"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea id="input" oninput="copyText()" maxlength="65536" placeholder="Type here..."></textarea>
+        </td>
+      </tr>
+    </table>
+
+    <table id="options">
+      <tr>
+        <td>
+          <button onclick="alert('Out of order')">CLEAR</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="alert('Out of order')">COPY MESSAGE</button>
+        </td>
+      </tr>
+    </table>
   </div>
 
   <hr>

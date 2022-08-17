@@ -34,27 +34,73 @@ span#heart {
 }
 
 div#content {
-  display: inline-block;
+  display: inline-flex;
 }
 
 p#output {
   text-align: left;
   font-size: x-large;
-
+  white-space: pre;
   color: var(--output-text);
   background-color: var(--output-back);
-
-  width: 20em;
-  height: 5em;
+  width: auto;
+  height: auto;
+  display: none;
 }
 
 textarea#input {
   resize: none;
   font-size: x-large;
-
   color: var(--input-text);
   background-color: var(--input-back);
+  width: auto;
+  height: auto;
+  resize: none;
+}
 
-  width: 20em;
+table {
+  /* border: 1px solid var(--warning) */
+}
+
+table#reference {
+  width: auto;
+  height: 1em;
+}
+
+tr.reference-tr {
+  border: 2px solid var(--success);
+  padding: 1em;
+}
+
+table#preview {
+  width: 30em;
   height: 5em;
+}
+
+table#options {
+  width: auto;
+  height: 1em;
+}
+
+button {
+  padding: .5em;
+  width: 100%;
+  opacity: .7;
+}
+
+button:hover {
+  opacity: .8em;
+}
+
+button:active {
+  opacity: 1em;
+}
+
+span.text {
+  color: var(--success);
+}
+
+span.textResult {
+  color: var(--warning);
+  font-family: Arial;
 }

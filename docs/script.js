@@ -9,7 +9,13 @@ function copyText() {
   var input = document.getElementById("input");
   var output = document.getElementById("output");
 
+  input.style.height = 'auto';
+  input.style.height = input.scrollHeight + 'px';
+
+  output.style.display = "block";
+
   console.log("[copyText] input", input.value);
+<<<<<<< Updated upstream
   // console.log("[copyText] (BEFORE) output", output.innerHTML);
 
   output.innerHTML = input.value;
@@ -36,4 +42,10 @@ function copyText() {
 
   // console.log("[copyText] (AFTER) output", output.innerHTML);
   console.log("[copyText] output", output.innerHTML);
+=======
+  console.log("[copyText] (BEFORE) output", output.innerText);
+
+  output.innerText = input.value;
+  console.log("[copyText] (AFTER) output", output.innerText);
+>>>>>>> Stashed changes
 }
